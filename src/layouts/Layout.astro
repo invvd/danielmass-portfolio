@@ -1,0 +1,31 @@
+---
+import "../styles/global.css";
+import ClientLayout from "./ClientLayout";
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="Desarrollo sitios y apps con foco en performance y negocio. Integraciones, dashboards y e-commerce. Descubre mis proyectos y solicita una cotización."
+    />
+    <title>Daniel Mass | Programador Web — Portafolio, Stack y Contacto</title>
+  </head>
+  <body>
+    <!-- Slot -->
+    <ClientLayout client:load>
+      <slot />
+    </ClientLayout>
+    <!-- Background -->
+    <div
+      class="h-lvh w-lvw fixed top-0 -z-10 bg-[radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"
+    >
+    </div>
+  </body>
+</html>
