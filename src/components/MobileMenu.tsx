@@ -27,14 +27,21 @@ export default function MobileMenu() {
           <ul className="flex flex-col items-center gap-6 text-xl text-white">
             {navBarLinks.map((link) => (
               <li key={link.href}>
-                <a href={link.href} onClick={toggleMenu}>
+                <a
+                  href={link.href}
+                  onClick={toggleMenu}
+                  className="transition-all hover:text-shadow-md text-shadow-primary/40 duration-200"
+                >
                   {link.label}
                 </a>
               </li>
             ))}
           </ul>
         </nav>
-        <button onClick={toggleMenu} className="cursor-pointer text-white">
+        <button
+          onClick={toggleMenu}
+          className="cursor-pointer text-white transition-all hover:text-shadow-md text-shadow-primary/40 duration-200"
+        >
           <XMarkIcon />
         </button>
         {/* Aquí puedes agregar los enlaces del menú */}
