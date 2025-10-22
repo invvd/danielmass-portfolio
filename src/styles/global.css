@@ -23,6 +23,13 @@ body {
   min-height: 100dvh;
 }
 
+h1 {
+  font-size: var(--text-3xl);
+  font-weight: var(--font-weight-bold);
+  text-wrap: balance;
+  line-height: 1.2;
+}
+
 .background {
   height: 100vh;
   width: 100vw;
