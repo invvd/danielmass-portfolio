@@ -2,12 +2,14 @@
 import Layout from "../layouts/Layout.astro";
 import ClientLayout from "../layouts/ClientLayout";
 import Hero from "../sections/index/Hero";
+import Services from "../sections/index/Services";
 ---
 
 <Layout>
   <ClientLayout client:load>
     <main>
       <Hero client:visible />
+      <Services client:visible />
     </main>
   </ClientLayout>
 </Layout>
