@@ -13,7 +13,7 @@ export default function Header() {
         href="/"
         className="text-white transition-all hover:text-shadow-md text-shadow-primary/40 duration-200"
       >
-        Daniel Mass
+        Daniel Mass J.
       </a>
 
       {/* Pc Navbar */}
