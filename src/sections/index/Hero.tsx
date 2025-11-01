@@ -9,13 +9,13 @@ export default function Hero() {
       className="w-dvw relative h-lvh flex flex-col items-center justify-center p-10 bg-gradient-to-b from-black/60 via-black/60 via-60% to-transparent text-center gap-4"
     >
       <motion.div
-        className="flex flex-col-reverse gap-2 md:items-center"
+        className="flex flex-col-reverse gap-4 md:items-center"
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
         <h1>Soy Daniel Mass, desarrollador web full stack 💻.</h1>
-        <StateTag text="Disponible" color="green" />
+        <StatusTag status="Disponible" />
       </motion.div>
       <motion.p
         className="text-balance max-w-2xl text-white/80"
@@ -50,13 +50,17 @@ export default function Hero() {
   );
 }
 
-function StateTag({ text, color }: { text: string; color: string }) {
+function StatusTag({ status }: { status: "Disponible" | "No disponible" }) {
   return (
     <div
       className={`bg-gradient-to-tr from-black to-white/10 w-fit rounded-full text-sm py-1 px-3 flex items-center mx-auto gap-2 shadow shadow-primary/10`}
     >
-      <span>{text}</span>
-      <div className={`bg-${color}-500 size-1.5 rounded-full`} />
+      <span>{status}</span>
+      <div
+        className={`bg-${
+          status === "Disponible" ? "green" : "red"
+        }-500 size-1.5 rounded-full`}
+      />
     </div>
   );
 }
