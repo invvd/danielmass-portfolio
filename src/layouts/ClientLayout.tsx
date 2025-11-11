@@ -10,7 +10,7 @@ export default function ClientLayout({
   return (
     <MenuContextProvider>
       <Header />
-      {children}
+      <main>{children}</main>
       <MobileMenu />
     </MenuContextProvider>
   );
