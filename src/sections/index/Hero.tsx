@@ -1,13 +1,23 @@
 import { motion } from "motion/react";
-import RocketIcon from "../../icons/RocketIcon";
-import ArrowDownIcon from "../../icons/ArrowDownIcon";
+import RocketIcon from "../../components/icons/RocketIcon";
+import ArrowDownIcon from "../../components/icons/ArrowDownIcon";
+import PrimaryButton from "../../components/PrimaryButton";
 
 export default function Hero() {
   return (
     <motion.section
       id="hero"
-      className="w-dvw relative h-lvh flex flex-col items-center justify-center p-10 text-center gap-2"
+      className="w-dvw relative h-lvh flex flex-col items-center justify-center p-10 text-center gap-2 pb-24"
     >
+      <motion.img
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        src="/images/ProfilePic.webp"
+        alt="Foto de Daniel Mass"
+        className="size-36 mb-4 rounded-full shadow-lg"
+      />
       <motion.div
         className="flex flex-col-reverse gap-4 md:items-center"
         initial={{ opacity: 0, y: 40 }}
@@ -35,13 +45,12 @@ export default function Hero() {
         transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
         className="flex flex-col-reverse md:flex-row gap-4 mt-6 items-center justify-center"
       >
-        <a
-          className="rounded-full px-4 py-1 text-lg flex items-center w-fit shadow hover:shadow-lg bg-gradient-to-r from-primary/20 to-primary/30 hover:from-primary/20 hover:to-primary/40 transition-colors duration-200 border border-white/5"
+        <PrimaryButton
+          Icon={RocketIcon}
+          cta="Solicita tu proyecto!"
           href="#contact"
-        >
-          <span>Solicita tu web!</span>
-          <RocketIcon className="inline-block size-5 ml-2" />
-        </a>
+          className="text-lg px-4"
+        />
       </motion.div>
       <a
         aria-label="Ir a Servicios"
