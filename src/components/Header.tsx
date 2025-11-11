@@ -1,19 +1,24 @@
-import MenuIcon from "../icons/MenuIcon";
+import MenuIcon from "./icons/MenuIcon";
 import { useMenuContext } from "../contexts/useMenuContext";
-import ChatBubbleIcon from "../icons/ChatBubbleIcon";
+import ChatBubbleIcon from "./icons/ChatBubbleIcon";
 import { navBarLinks } from "../config";
 
 export default function Header() {
   const { toggleMenu } = useMenuContext();
 
   return (
-    <header className="border border-white/2 backdrop-brightness-50 p-3 px-6 top-4 rounded-full backdrop-blur-lg left-1/2 -translate-x-1/2 h-fit mx-auto fixed w-[90dvw] flex justify-between items-center z-50">
+    <header className="border border-white/5 backdrop-brightness-50 p-3 px-6 top-4 rounded-full backdrop-blur-lg left-1/2 -translate-x-1/2 h-fit mx-auto fixed w-[90dvw] flex justify-between items-center z-50">
       {/* Logo */}
       <a
         href="/"
-        className="text-white transition-all hover:text-shadow-md text-shadow-primary/40 duration-200"
+        className="text-white transition-all hover:text-shadow-lg text-shadow-primary/20 duration-200 group font-medium flex items-center"
       >
-        Daniel Mass J.
+        <img
+          src="/images/ProfilePic.webp"
+          alt="Foto de Daniel Mass"
+          className="size-6 rounded-full shadow-lg inline-block mr-2 object-cover group-hover:shadow-lg group-hover:shadow-primary/20 transition-shadow duration-200"
+        />
+        <span>Daniel Mass J.</span>
       </a>
 
       {/* Pc Navbar */}
