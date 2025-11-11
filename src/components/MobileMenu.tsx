@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useMenuContext } from "../contexts/useMenuContext";
-import XMarkIcon from "../icons/XMarkIcon";
+import XMarkIcon from "./icons/XMarkIcon";
 import { navBarLinks } from "../config";
 
 export default function MobileMenu() {
