@@ -45,7 +45,7 @@ h2 {
   z-index: -10;
   top: 0;
   left: 0;
-  background: radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%);
+  background: radial-gradient(125% 125% at 50% 10%, #030303 40%, #63e 100%);
   background-size: auto;
   background-repeat: no-repeat;
 }
