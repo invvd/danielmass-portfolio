@@ -1,12 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Hero from "../sections/index/Hero";
+import Projects from "../sections/index/Projects";
 import Services from "../sections/index/Services";
 ---
 
 <Layout>
-  <main>
-    <Hero client:visible />
-    <Services client:visible />
-  </main>
+  <Hero client:visible />
+  <Services client:visible />
+  <Projects client:visible />
 </Layout>
