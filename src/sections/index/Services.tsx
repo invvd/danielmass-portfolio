@@ -1,7 +1,5 @@
-// components/ServicesGrid.jsx
 import { Code, ShoppingCart, Database, Zap, Shield, Brush } from "lucide-react";
 import { motion } from "motion/react";
-import type React from "react";
 
 const services = [
   {
