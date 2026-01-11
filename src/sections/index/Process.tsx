@@ -61,10 +61,10 @@ export default function Process() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="relative p-6 rounded-xl border border-white/5 bg-gradient-to-br from-white/5 to-white/0 backdrop-blur-sm"
+                className="relative p-6 rounded-xl border border-white/5 bg-linear-to-br from-white/5 to-white/0 backdrop-blur-sm"
               >
                 {/* Número del paso */}
-                <div className="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center text-2xl font-bold shadow-lg shadow-primary/20">
+                <div className="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-linear-to-br from-primary to-primary/60 flex items-center justify-center text-2xl font-bold shadow-lg shadow-primary/20">
                   {step.number}
                 </div>
 

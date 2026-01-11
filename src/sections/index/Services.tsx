@@ -105,7 +105,7 @@ function ServiceCard({
       className="text-white/80 p-6 transition-colors font-medium rounded-xl justify-between border border-white/5 flex flex-col shadow-xl shadow-black/20 gap-2 h-full overflow-hidden"
     >
       <div className="flex items-center gap-3">
-        <span className="inline-flex min-w-10 min-h-10 items-center justify-center rounded-xl border bg-gradient-to-r from-primary/15 to-primary/10 border-white/5">
+        <span className="inline-flex min-w-10 min-h-10 items-center justify-center rounded-xl border bg-linear-to-r from-primary/15 to-primary/10 border-white/5">
           <Icon className="size-5" />
         </span>
         <h3 className="text-xl">{title}</h3>
@@ -124,7 +124,7 @@ function ServiceCard({
 
       <a
         href="/#contact"
-        className="mt-6 inline-flex w-full items-center justify-center rounded-full border border-white/5 px-4 py-2 text-sm duration-300 bg-gradient-to-l from-primary/10 to-primary/15 transition shadow hover:shadow-lg hover:shadow-black/20"
+        className="mt-6 inline-flex w-full items-center justify-center rounded-full border border-white/5 px-4 py-2 text-sm duration-300 bg-linear-to-l from-primary/10 to-primary/15 transition shadow hover:shadow-lg hover:shadow-black/20"
         data-analytics="click_cta_servicio"
       >
         {cta}

@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { MessageCircle, Calendar, Phone } from "lucide-react";
+import { Calendar } from "lucide-react";
 import PrimaryButton from "../../components/PrimaryButton";
 import { config } from "../../config";
 

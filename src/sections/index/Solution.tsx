@@ -61,7 +61,7 @@ export default function Solution() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="text-center p-6 rounded-xl border border-white/5 bg-gradient-to-br from-primary/5 to-primary/10 backdrop-blur-sm"
+                className="text-center p-6 rounded-xl border border-white/5 bg-linear-to-br from-primary/5 to-primary/10 backdrop-blur-sm"
               >
                 <div className="inline-flex p-3 rounded-xl bg-primary/10 border border-primary/20 mb-4">
                   <Icon className="size-8 text-primary" />
@@ -79,7 +79,7 @@ export default function Solution() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="p-8 rounded-2xl border border-white/5 bg-gradient-to-br from-white/5 to-white/0 backdrop-blur-sm"
+          className="p-8 rounded-2xl border border-white/5 bg-linear-to-br from-white/5 to-white/0 backdrop-blur-sm"
         >
           <h3 className="text-2xl font-semibold mb-6 text-center">
             ¿Qué incluye?
@@ -94,7 +94,7 @@ export default function Solution() {
                 transition={{ duration: 0.4, delay: 0.3 + index * 0.05 }}
                 className="flex items-center gap-3"
               >
-                <div className="flex-shrink-0 p-1 rounded-full bg-green-500/20">
+                <div className="shrink-0 p-1 rounded-full bg-green-500/20">
                   <Check className="size-5 text-green-400" />
                 </div>
                 <span className="text-white/90">{benefit}</span>

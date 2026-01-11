@@ -54,10 +54,10 @@ export default function WhyMe() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="p-6 rounded-xl border border-white/5 bg-gradient-to-br from-white/5 to-white/0 backdrop-blur-sm hover:border-primary/20 transition-colors"
+                className="p-6 rounded-xl border border-white/5 bg-linear-to-br from-white/5 to-white/0 backdrop-blur-sm hover:border-primary/20 transition-colors"
               >
                 <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-xl bg-gradient-to-br from-primary/20 to-primary/10 border border-primary/20">
+                  <div className="p-3 rounded-xl bg-linear-to-br from-primary/20 to-primary/10 border border-primary/20">
                     <Icon className="size-6 text-primary" />
                   </div>
                   <div className="flex-1">
@@ -77,7 +77,7 @@ export default function WhyMe() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="mt-12 p-8 rounded-2xl border border-primary/20 bg-gradient-to-br from-primary/10 to-primary/5 backdrop-blur-sm text-center"
+          className="mt-12 p-8 rounded-2xl border border-primary/20 bg-linear-to-br from-primary/10 to-primary/5 backdrop-blur-sm text-center"
         >
           <p className="text-lg md:text-xl text-white/90">
             Trabajo contigo como partner digital, no como proveedor distante

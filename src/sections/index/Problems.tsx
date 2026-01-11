@@ -51,7 +51,7 @@ export default function Problems() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="p-6 rounded-xl border border-white/5 bg-gradient-to-br from-white/5 to-white/0 backdrop-blur-sm"
+                className="p-6 rounded-xl border border-white/5 bg-linear-to-br from-white/5 to-white/0 backdrop-blur-sm"
               >
                 <div className="flex items-start gap-4">
                   <div className="p-3 rounded-xl bg-white/5 border border-white/10">
