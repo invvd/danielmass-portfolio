@@ -45,7 +45,22 @@ h2 {
   z-index: -10;
   top: 0;
   left: 0;
-  background: radial-gradient(125% 125% at 50% 10%, #030303 40%, #63e 100%);
+  background: radial-gradient(
+      ellipse 80% 50% at 50% -20%,
+      rgba(102, 51, 238, 0.15) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse 60% 50% at 80% 50%,
+      rgba(102, 51, 238, 0.08) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse 60% 50% at 20% 80%,
+      rgba(102, 51, 238, 0.08) 0%,
+      transparent 50%
+    ),
+    linear-gradient(180deg, #000000 0%, #0a0a0a 50%, #000000 100%);
   background-size: auto;
   background-repeat: no-repeat;
 }

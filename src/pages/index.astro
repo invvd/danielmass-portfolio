@@ -1,14 +1,22 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Hero from "../sections/index/Hero";
+import Problems from "../sections/index/Problems";
+import Solution from "../sections/index/Solution";
 import Projects from "../sections/index/Projects";
+import Process from "../sections/index/Process";
+import WhyMe from "../sections/index/WhyMe";
 import Services from "../sections/index/Services";
-import Techs from "../sections/index/Techs";
+import FinalCTA from "../sections/index/FinalCTA";
 ---
 
 <Layout>
   <Hero client:visible />
-  <Services client:visible />
+  <Problems client:visible />
+  <Solution client:visible />
   <Projects client:visible />
-  <Techs client:visible />
+  <Process client:visible />
+  <WhyMe client:visible />
+  <Services client:visible />
+  <FinalCTA client:visible />
 </Layout>

@@ -3,75 +3,73 @@ import { motion } from "motion/react";
 
 const services = [
   {
-    name: "Landing / Sitio",
+    name: "Web o Landing Page",
     icon: Code,
-    pitch: "Convierte visitas en clientes con velocidad y SEO técnico.",
+    pitch:
+      "Tu negocio online con formularios para captar contactos y respuestas automáticas por WhatsApp.",
     bullets: [
-      "1–5 secciones, responsive",
-      "WhatsApp + Analytics",
-      "CWV 90+ de base",
+      "Web rápida y profesional",
+      "Captura de contactos 24/7",
+      "Optimizada para Google",
     ],
-    cta: "Cotizar este paquete",
+    cta: "Quiero mi web",
     href: "#contact",
   },
   {
-    name: "E-commerce",
-    icon: ShoppingCart,
-    pitch: "Catálogo, checkout y pagos integrados listos para vender.",
-    bullets: [
-      "Checkout + medios de pago",
-      "Emails transaccionales",
-      "Optimización de conversión",
-    ],
-    cta: "Cotizar este paquete",
-    href: "#contact",
-  },
-  {
-    name: "App Web + API",
-    icon: Database,
-    pitch: "Paneles y APIs escalables con auth y BD robusta.",
-    bullets: ["Auth + roles", "REST/GraphQL documentada", "Postgres/Prisma"],
-    cta: "Agendar reunión",
-    href: "#contact",
-  },
-  {
-    name: "Optimización & Mantenimiento",
-    icon: Shield,
-    pitch: "Sube rendimiento, SEO y seguridad de tu sitio actual.",
-    bullets: ["Auditoría CWV", "Hardening y backups", "Soporte continuo"],
-    cta: "Quiero optimizar",
-    href: "#contact",
-  },
-  {
-    name: "Integraciones & Automatización",
+    name: "Sistema de captación automática",
     icon: Zap,
-    pitch: "Conecta tu web con CRM/ERP y automatiza tareas.",
+    pitch:
+      "Todo integrado: web, formularios, respuestas automáticas y seguimiento de clientes.",
     bullets: [
-      "Zapier/Make/HubSpot",
-      "Webhooks y sincronización",
-      "Reportes operativos",
+      "WhatsApp automatizado",
+      "Emails automáticos",
+      "Organización de contactos",
     ],
-    cta: "Conectar sistemas",
+    cta: "Quiero automatizar",
+    href: "#contact",
+  },
+  {
+    name: "Tienda online",
+    icon: ShoppingCart,
+    pitch: "Vende 24/7 con catálogo, carrito de compra y pagos integrados.",
+    bullets: [
+      "Medios de pago integrados",
+      "Gestión de productos",
+      "Emails de confirmación",
+    ],
+    cta: "Quiero vender online",
+    href: "#contact",
+  },
+  {
+    name: "Optimización y soporte",
+    icon: Shield,
+    pitch:
+      "Mejora tu web actual: hazla más rápida, más visible en Google y más segura.",
+    bullets: [
+      "Acelerar tu web",
+      "Mejorar posición en Google",
+      "Respaldos automáticos",
+    ],
+    cta: "Quiero optimizar",
     href: "#contact",
   },
 ];
 
 export default function Services() {
   return (
-    <section id="services" aria-labelledby="services-title" className="pb-24">
+    <section id="services" aria-labelledby="services-title" className="py-24">
       <div className="mx-auto max-w-6xl px-6">
         <h2 id="services-title" className="text-3xl md:text-4xl font-semibold">
-          Servicios
+          Otros servicios
         </h2>
         <p className="text-base md:text-lg text-white/70 mt-2">
-          Desarrollo plataformas web a medida que impulsan negocios de cualquier
-          tamaño.
+          Soluciones específicas según lo que necesite tu negocio
         </p>
 
         <ul
           role="list"
           aria-label="Lista de servicios"
-          className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+          className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6"
         >
           {services.map((s, i) => {
             const Icon = s.icon;
@@ -87,21 +85,17 @@ export default function Services() {
               </li>
             );
           })}
-
-          <li>
-            <ServiceCard
-              title="Proyecto personalizado"
-              subtitle="Armemos juntos una solución a tu medida."
-              features={[
-                "Completa flexibilidad",
-                "Soporte completo",
-                "Funciones únicas",
-              ]}
-              cta="Hablemos de mi proyecto"
-              Icon={Brush}
-            />
-          </li>
         </ul>
+
+        <div className="mt-12 text-center">
+          <p className="text-white/60 mb-4">¿No encuentras lo que buscas?</p>
+          <a
+            href="/#contact"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-primary/20 to-primary/10 border border-primary/30 hover:border-primary/50 transition-colors text-lg"
+          >
+            Cuéntame qué necesitas
+          </a>
+        </div>
       </div>
     </section>
   );

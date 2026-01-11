@@ -1,6 +1,7 @@
 export const navBarLinks = [
   { href: "#hero", label: "Inicio" },
-  { href: "#services", label: "Servicios" },
-  { href: "#projects", label: "Proyectos" },
-  { href: "#about", label: "Sobre mí" },
+  { href: "#solution", label: "Solución" },
+  { href: "#projects", label: "Casos de éxito" },
+  { href: "#why-me", label: "Por qué yo" },
+  { href: "#contact", label: "Contacto" },
 ];

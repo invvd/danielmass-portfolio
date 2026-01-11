@@ -13,16 +13,18 @@ import PostgreSQLBadge from "../../components/badges/PostgreSQLBadge";
 
 const projects = [
   {
-    title: "Integración de Chatbot IA para Autónomas",
+    title: "Chatbot con IA para atención automatizada",
     description:
-      "Integración de Chatwoot con API personalizada para el flujo del cliente utilizando OpenAI, Google Sheets y Meta Business.",
+      "Sistema que responde automáticamente en WhatsApp y Facebook, reduciendo tiempo de respuesta a menos de 1 minuto y liberando más de 15 horas semanales.",
+    result: "80% de consultas resueltas automáticamente",
     technologies: [ExpressJSBadge, DockerBadge, NginxBadge, PostgreSQLBadge],
     projectId: "chatbot-autonomas",
   },
   {
-    title: "Integración de Chatbot IA para Emisolve",
+    title: "Sistema de captación automática para empresa de servicios",
     description:
-      "Integración de Chatwoot con API personalizada para el flujo del cliente utilizando OpenAI, Google Sheets y Meta Business.",
+      "Integración completa de web con WhatsApp, CRM y respuestas automáticas que permitió captar 3x más contactos mensuales.",
+    result: "300% más contactos en 30 días",
     technologies: [
       ExpressJSBadge,
       DockerBadge,
@@ -33,16 +35,20 @@ const projects = [
     projectId: "chatbot-autonomas",
   },
   {
-    title: "Landing Page para INPROCO",
-    description: "Landing page responsiva y optimizada para SEO para INPROCO",
+    title: "Landing optimizada para conversión",
+    description:
+      "Sitio web rápido y optimizado para SEO que aumentó las conversiones en un 150% y carga en menos de 1 segundo.",
+    result: "150% más conversiones",
     technologies: [NextJSBadge, TailwindBadge],
     visitLink: "https://inproco.cl",
     projectId: "landing-inproco",
     codeLink: "https://github.com/invvd/inproco.cl",
   },
   {
-    title: "Landing Page para Autónomas",
-    description: "Landing page responsiva y optimizada para SEO para Autónomas",
+    title: "Web moderna con captación de leads",
+    description:
+      "Landing page responsiva con formularios inteligentes y análisis integrado para captar y organizar contactos automáticamente.",
+    result: "Captura de contactos 24/7",
     imageAlt: "Captura de pantalla de la landing page de Autónomas",
     imageSrc: "/images/projects/autonomas_landing.webp",
     technologies: [AstroBadge, TailwindBadge],
@@ -53,12 +59,15 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" aria-labelledby="projects-title" className="pb-24">
+    <section
+      id="projects"
+      aria-labelledby="projects-title"
+      className="py-24 bg-black/20"
+    >
       <div className="mx-auto max-w-6xl px-6">
-        <h2>Proyectos</h2>
+        <h2>Casos de éxito</h2>
         <p className="text-base md:text-lg text-white/70 mt-2">
-          Explora mis proyectos: diseño moderno, código limpio y alto
-          rendimiento.
+          Resultados reales que he ayudado a conseguir a otros negocios
         </p>
 
         <div className="mt-10 flex flex-col gap-8">
@@ -75,6 +84,7 @@ function ProjectCard({ project }: { project: (typeof projects)[number] }) {
   const {
     title,
     description,
+    result,
     imageSrc,
     imageAlt,
     technologies,
@@ -83,25 +93,40 @@ function ProjectCard({ project }: { project: (typeof projects)[number] }) {
     projectId,
   } = project;
   return (
-    <div className="p-4 rounded-xl hover:shadow-lg transition-shadow duration-200 flex flex-col backdrop-blur-lg backdrop-brightness-75 shadow-lg shadow-black/20">
+    <div className="p-6 rounded-xl hover:shadow-lg transition-shadow duration-200 flex flex-col backdrop-blur-lg backdrop-brightness-75 shadow-lg shadow-black/20 border border-white/5">
       {/* Screenshot */}
       {imageSrc && (
         <img
           src={imageSrc}
           alt={imageAlt || title || "Project screenshot"}
-          className="rounded-xl mb-2"
+          className="rounded-xl mb-4"
           loading="lazy"
         />
       )}
 
-      <h3 className="text-xl mb-2">{title}</h3>
-      {/* Technologies */}
-      <div className="flex flex-wrap gap-2 mb-4">
-        {technologies.map((Technology, index) => (
+      <h3 className="text-xl md:text-2xl font-semibold mb-2">{title}</h3>
+
+      {/* Result Badge */}
+      {result && (
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-500/10 border border-green-500/20 text-green-400 text-sm font-medium mb-3 w-fit">
+          <span>✓</span>
+          {result}
+        </div>
+      )}
+
+      <p className="text-white/80 text-sm md:text-base mb-4">{description}</p>
+
+      {/* Technologies - Minimizadas */}
+      <div className="flex flex-wrap gap-2 mb-4 opacity-60">
+        {technologies.slice(0, 3).map((Technology, index) => (
           <Technology key={index} />
         ))}
+        {technologies.length > 3 && (
+          <span className="text-xs text-white/50">
+            +{technologies.length - 3}
+          </span>
+        )}
       </div>
-      <p className="text-white/80 text-sm mb-6">{description}</p>
 
       {/* Buttons */}
       <div>

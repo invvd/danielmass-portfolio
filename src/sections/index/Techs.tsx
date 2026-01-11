@@ -1,7 +1,7 @@
 import Nextjs from "../../components/logos/Nextjs";
 import ReactLogo from "../../components/logos/ReactLogo";
 import Typescript from "../../components/logos/Typescript";
-import Astro from "../../components/logos/astro";
+import Astro from "../../components/logos/Astro";
 import PostgreSQL from "../../components/logos/PostgreSQL";
 import MongoDB from "../../components/logos/MongoDB";
 import MySQL from "../../components/logos/MySQL";
@@ -10,7 +10,7 @@ import Strapi from "../../components/logos/Strapi";
 import N8n from "../../components/logos/N8n";
 import Python from "../../components/logos/Python";
 import Wordpress from "../../components/logos/Wordpress";
-import Git from "../../components/logos/git";
+import Git from "../../components/logos/Git";
 
 const techs = [
   {
