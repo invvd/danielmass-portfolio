@@ -4,12 +4,11 @@ import PrimaryButton from "../../components/PrimaryButton";
 import ChatBubbleIcon from "../../components/icons/ChatBubbleIcon";
 
 const benefits = [
-  "Landing page o web optimizada para conversión",
-  "Formularios inteligentes que captan contactos",
-  "Automatización de WhatsApp y/o Email",
-  "Integración con planillas o CRM",
-  "Seguimiento automático de clientes",
-  "Chatbot con IA (opcional)",
+  "Página web o landing optimizada para captar clientes",
+  "Formularios inteligentes que recopilan datos automáticamente",
+  "Automatización de WhatsApp y/o correo electrónico",
+  "Organización de contactos en CRM o planillas",
+  "Chatbot inteligente (opcional) para atención 24/7",
 ];
 
 const results = [
@@ -32,7 +31,7 @@ const results = [
 
 export default function Solution() {
   return (
-    <section id="solution" className="py-24">
+    <section id="solution" className="py-24 rounded-3xl my-4">
       <div className="mx-auto max-w-6xl px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -42,11 +41,12 @@ export default function Solution() {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-            Sistema de Captación Automática
+            Un sistema digital que trabaja por tu negocio
           </h2>
           <p className="text-white/70 text-lg max-w-3xl mx-auto">
-            Todo lo que necesitas para conseguir más clientes y ahorrar tiempo,
-            en un solo sistema
+            No se trata de una sola herramienta. Implemento un{" "}
+            <strong>sistema completo de captación y automatización</strong>{" "}
+            adaptado a tu negocio.
           </p>
         </motion.div>
 
@@ -102,25 +102,21 @@ export default function Solution() {
             ))}
           </ul>
 
-          <div className="text-center space-y-4">
-            <p className="text-white/60">
-              <span className="text-primary font-semibold">
-                Tiempo de implementación:
-              </span>{" "}
-              7 a 14 días
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="text-center mt-8"
+          >
+            <p className="text-lg md:text-xl text-white/90">
+              Un sistema que responde, ordena y gestiona clientes{" "}
+              <span className="font-semibold text-primary">
+                sin que tengas que estar encima
+              </span>
+              .
             </p>
-            <p className="text-white/70 text-lg">
-              Simple, rápido y efectivo para tu negocio
-            </p>
-            <div className="pt-4">
-              <PrimaryButton
-                Icon={ChatBubbleIcon}
-                cta="Solicita un diagnóstico gratuito"
-                href="#contact"
-                className="text-lg px-6 py-3"
-              />
-            </div>
-          </div>
+          </motion.div>
         </motion.div>
       </div>
     </section>

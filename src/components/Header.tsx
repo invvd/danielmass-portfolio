@@ -2,6 +2,7 @@ import MenuIcon from "./icons/MenuIcon";
 import { useMenuContext } from "../contexts/useMenuContext";
 import ChatBubbleIcon from "./icons/ChatBubbleIcon";
 import { navBarLinks } from "../config";
+import Image from "astro/components/Image.astro";
 
 export default function Header() {
   const { toggleMenu } = useMenuContext();

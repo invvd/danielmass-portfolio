@@ -1,75 +1,67 @@
-import { Code, ShoppingCart, Database, Zap, Shield, Brush } from "lucide-react";
+import { Code, MessageCircle, Zap } from "lucide-react";
 import { motion } from "motion/react";
 
 const services = [
   {
-    name: "Web o Landing Page",
-    icon: Code,
-    pitch:
-      "Tu negocio online con formularios para captar contactos y respuestas automáticas por WhatsApp.",
+    name: "Automatización de atención al cliente",
+    icon: MessageCircle,
+    pitch: "Chatbots y flujos automáticos para responder y captar datos 24/7.",
     bullets: [
-      "Web rápida y profesional",
-      "Captura de contactos 24/7",
-      "Optimizada para Google",
+      "Respuestas automáticas en WhatsApp",
+      "Captura de información de clientes",
+      "Atención 24/7 sin personal adicional",
     ],
-    cta: "Quiero mi web",
+    cta: "Quiero automatizar atención",
     href: "#contact",
   },
   {
-    name: "Sistema de captación automática",
+    name: "Automatización de procesos",
     icon: Zap,
     pitch:
-      "Todo integrado: web, formularios, respuestas automáticas y seguimiento de clientes.",
+      "Optimización de tareas repetitivas para ahorrar tiempo y reducir errores.",
     bullets: [
-      "WhatsApp automatizado",
-      "Emails automáticos",
-      "Organización de contactos",
+      "Automatización de emails",
+      "Integración con planillas y CRM",
+      "Eliminación de tareas manuales",
     ],
-    cta: "Quiero automatizar",
+    cta: "Quiero automatizar procesos",
     href: "#contact",
   },
   {
-    name: "Tienda online",
-    icon: ShoppingCart,
-    pitch: "Vende 24/7 con catálogo, carrito de compra y pagos integrados.",
-    bullets: [
-      "Medios de pago integrados",
-      "Gestión de productos",
-      "Emails de confirmación",
-    ],
-    cta: "Quiero vender online",
-    href: "#contact",
-  },
-  {
-    name: "Optimización y soporte",
-    icon: Shield,
+    name: "Desarrollo web orientado a conversión",
+    icon: Code,
     pitch:
-      "Mejora tu web actual: hazla más rápida, más visible en Google y más segura.",
+      "Webs y landings pensadas para generar contactos, no solo verse bien.",
     bullets: [
-      "Acelerar tu web",
-      "Mejorar posición en Google",
-      "Respaldos automáticos",
+      "Landing pages optimizadas",
+      "Formularios inteligentes",
+      "SEO y velocidad optimizada",
     ],
-    cta: "Quiero optimizar",
+    cta: "Quiero mi web",
     href: "#contact",
   },
 ];
 
 export default function Services() {
   return (
-    <section id="services" aria-labelledby="services-title" className="py-24">
+    <section
+      id="services"
+      aria-labelledby="services-title"
+      className="py-24 rounded-3xl my-4"
+    >
       <div className="mx-auto max-w-6xl px-6">
         <h2 id="services-title" className="text-3xl md:text-4xl font-semibold">
-          Otros servicios
+          Servicios
         </h2>
         <p className="text-base md:text-lg text-white/70 mt-2">
-          Soluciones específicas según lo que necesite tu negocio
+          Todos los servicios se integran en sistemas completos según cada
+          negocio
         </p>
 
         <ul
           role="list"
           aria-label="Lista de servicios"
-          className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6"
+          className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6"
         >
           {services.map((s, i) => {
             const Icon = s.icon;
@@ -86,16 +78,6 @@ export default function Services() {
             );
           })}
         </ul>
-
-        <div className="mt-12 text-center">
-          <p className="text-white/60 mb-4">¿No encuentras lo que buscas?</p>
-          <a
-            href="/#contact"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-primary/20 to-primary/10 border border-primary/30 hover:border-primary/50 transition-colors text-lg"
-          >
-            Cuéntame qué necesitas
-          </a>
-        </div>
       </div>
     </section>
   );

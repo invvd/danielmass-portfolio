@@ -3,33 +3,31 @@ import { Clock, Users, TrendingDown, MessageCircleX } from "lucide-react";
 
 const problems = [
   {
-    icon: Users,
-    title: "Pocos clientes nuevos",
-    description: "Tu negocio necesita más contactos calificados cada mes.",
-  },
-  {
-    icon: Clock,
-    title: "Demasiado tiempo manual",
-    description:
-      "Respondes las mismas preguntas todo el día, perdiendo tiempo valioso.",
-  },
-  {
     icon: MessageCircleX,
-    title: "Respuestas lentas",
+    title: "Te escriben por WhatsApp y no alcanzas a responder a tiempo",
     description:
-      "Los clientes escriben y tienes que esperar para responder, perdiendo oportunidades.",
+      "Los clientes esperan respuestas inmediatas y pierdes oportunidades.",
   },
   {
     icon: TrendingDown,
-    title: "Sin seguimiento",
-    description:
-      "Los contactos se pierden porque no hay un sistema para organizarlos.",
+    title: "Pierdes clientes por respuestas tardías",
+    description: "Cuando finalmente respondes, ya eligieron a tu competencia.",
+  },
+  {
+    icon: Users,
+    title: "Tienes datos desordenados en Excel o planillas",
+    description: "No sabes quién es quién ni cómo hacer seguimiento efectivo.",
+  },
+  {
+    icon: Clock,
+    title: "Haces tareas repetitivas que te quitan horas cada semana",
+    description: "Contestar lo mismo una y otra vez consume tu tiempo valioso.",
   },
 ];
 
 export default function Problems() {
   return (
-    <section id="problems" className="py-24 bg-black/20">
+    <section id="problems" className="py-24 bg-black/20 rounded-3xl my-4">
       <div className="mx-auto max-w-6xl px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -39,11 +37,8 @@ export default function Problems() {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-            ¿Te suena familiar?
+            ¿Estos problemas te suenan familiares?
           </h2>
-          <p className="text-white/70 text-lg max-w-2xl mx-auto">
-            Muchos negocios en Chile enfrentan estos problemas todos los días
-          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -73,6 +68,22 @@ export default function Problems() {
             );
           })}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="mt-12 text-center"
+        >
+          <p className="text-lg md:text-xl text-white/90">
+            Si alguno de estos problemas ocurre en tu negocio,{" "}
+            <span className="font-semibold text-primary">
+              se puede automatizar
+            </span>
+            .
+          </p>
+        </motion.div>
       </div>
     </section>
   );

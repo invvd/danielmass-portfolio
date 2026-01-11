@@ -1,4 +1,5 @@
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
 import { MenuContextProvider } from "../contexts/useMenuContext";
 
@@ -11,6 +12,7 @@ export default function ClientLayout({
     <MenuContextProvider>
       <Header />
       <main>{children}</main>
+      <Footer />
       <MobileMenu />
     </MenuContextProvider>
   );

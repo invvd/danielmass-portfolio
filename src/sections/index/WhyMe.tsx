@@ -3,34 +3,34 @@ import { MapPin, Users, Award, Zap } from "lucide-react";
 
 const reasons = [
   {
-    icon: MapPin,
-    title: "100% en Chile",
-    description:
-      "Entiendo el mercado local, hablo tu idioma y estoy en tu zona horaria. Reuniones presenciales si lo necesitas.",
-  },
-  {
     icon: Users,
-    title: "Atención directa",
+    title: "Trato directo, sin intermediarios",
     description:
-      "Hablas directo conmigo, sin intermediarios. Respuestas rápidas y soluciones personalizadas para tu negocio.",
+      "Hablas conmigo directamente. Sin pasar por equipos ni esperar respuestas.",
   },
   {
     icon: Award,
-    title: "Resultados comprobados",
+    title: "Enfoque en resultados, no en tecnología",
     description:
-      "He ayudado a negocios a automatizar procesos, conseguir más clientes y ahorrar tiempo con soluciones reales.",
+      "Me importa que tu negocio crezca, no impresionarte con palabras técnicas.",
   },
   {
     icon: Zap,
-    title: "Implementación rápida",
+    title: "Soluciones simples y escalables",
     description:
-      "No proyectos eternos. Te entrego sistemas funcionando en 7-14 días, listos para generar resultados.",
+      "Sistemas que puedes usar fácilmente hoy y que crecen con tu negocio.",
+  },
+  {
+    icon: MapPin,
+    title: "Experiencia real automatizando procesos",
+    description:
+      "He ayudado a negocios reales en Chile a ahorrar tiempo y conseguir más clientes.",
   },
 ];
 
 export default function WhyMe() {
   return (
-    <section id="why-me" className="py-24">
+    <section id="why-me" className="py-24 rounded-3xl my-4">
       <div className="mx-auto max-w-6xl px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -42,10 +42,6 @@ export default function WhyMe() {
           <h2 className="text-3xl md:text-4xl font-semibold mb-4">
             ¿Por qué trabajar conmigo?
           </h2>
-          <p className="text-white/70 text-lg max-w-2xl mx-auto">
-            No soy una agencia grande con procesos complejos. Soy un profesional
-            independiente enfocado en resultados.
-          </p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8">
@@ -83,13 +79,8 @@ export default function WhyMe() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-12 p-8 rounded-2xl border border-primary/20 bg-gradient-to-br from-primary/10 to-primary/5 backdrop-blur-sm text-center"
         >
-          <p className="text-lg md:text-xl text-white/90 mb-4">
-            Trabajo directo contigo (o tu equipo) para crear soluciones que
-            realmente funcionen
-          </p>
-          <p className="text-white/70">
-            Sin complicaciones, sin contratos eternos, sin mensualidades
-            ocultas.
+          <p className="text-lg md:text-xl text-white/90">
+            Trabajo contigo como partner digital, no como proveedor distante
           </p>
         </motion.div>
       </div>

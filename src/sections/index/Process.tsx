@@ -5,36 +5,36 @@ const steps = [
   {
     icon: MessageCircle,
     number: "1",
-    title: "Conversamos",
+    title: "Analizo tu negocio y procesos actuales",
     description:
-      "Agendamos una llamada o hablamos por WhatsApp para entender tu negocio y qué necesitas.",
+      "Conversamos sobre cómo funciona tu negocio hoy y qué se puede mejorar.",
   },
   {
     icon: Lightbulb,
     number: "2",
-    title: "Diseñamos la solución",
+    title: "Diseño la solución de automatización",
     description:
-      "Te presento un plan claro con lo que vamos a implementar y los resultados que podemos lograr.",
+      "Creo un plan claro con las herramientas y procesos que implementaremos.",
   },
   {
     icon: Rocket,
     number: "3",
-    title: "Implementamos",
+    title: "Implemento y pruebo el sistema",
     description:
-      "Desarrollo e integro todo el sistema en 7-14 días, manteniéndote al tanto del progreso.",
+      "Desarrollo todo en 7-14 días, manteniéndote al tanto del progreso.",
   },
   {
     icon: CheckCircle,
     number: "4",
-    title: "Lanzamos y optimizamos",
+    title: "Te explico cómo usarlo de forma simple",
     description:
-      "Ponemos todo en marcha, te capacito para usarlo y seguimos mejorando basados en resultados.",
+      "Capacitación directa para que puedas usar el sistema sin dependencia técnica.",
   },
 ];
 
 export default function Process() {
   return (
-    <section id="process" className="py-24 bg-black/20">
+    <section id="process" className="py-24 bg-black/20 rounded-3xl my-4">
       <div className="mx-auto max-w-6xl px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -90,7 +90,7 @@ export default function Process() {
           className="mt-12 text-center"
         >
           <p className="text-white/80 text-lg">
-            Todo el proceso es colaborativo y adaptado a tu ritmo
+            Sin procesos complejos ni dependencia técnica
           </p>
         </motion.div>
       </div>
