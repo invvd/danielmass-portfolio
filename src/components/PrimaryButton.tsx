@@ -14,7 +14,7 @@ export default function PrimaryButton({
   if (disabled) {
     return (
       <div
-        className={`bg-gradient-to-r from-primary/10 to-primary/30 border border-white/5 text-white/80 px-2 py-1 rounded-full shadow-lg transition-colors items-center flex gap-2 group ${className}`}
+        className={`bg-linear-to-r from-primary/10 to-primary/30 border border-white/5 text-white/80 px-2 py-1 rounded-full shadow-lg transition-all items-center flex gap-2 group ${className}`}
       >
         <div className="opacity-25 flex items-center gap-2 cursor-not-allowed">
           {cta} <Icon className="size-5" />
@@ -27,7 +27,7 @@ export default function PrimaryButton({
     <a
       aria-disabled={disabled}
       href={href}
-      className={`bg-gradient-to-r from-primary/10 to-primary/30 border border-white/5 text-white/80 px-2 py-1 rounded-full hover:to-primary/30 hover:text-white shadow-lg transition-colors items-center flex gap-2 group ${className}`}
+      className={`bg-linear-to-r from-primary/10 to-primary/30 border border-white/5 text-white/80 px-2 py-1 rounded-full hover:to-primary/30 hover:text-white shadow-lg transition-all items-center flex gap-2 group ${className}`}
     >
       {cta} <Icon className="size-5" />
     </a>

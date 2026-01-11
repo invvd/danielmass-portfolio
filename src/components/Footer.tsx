@@ -1,5 +1,5 @@
 import { MessageCircle, Mail } from "lucide-react";
-import { config, navBarLinks } from "../config";
+import { config } from "../config";
 
 export default function Footer() {
   return (
@@ -38,7 +38,7 @@ export default function Footer() {
               <span className="text-sm">WhatsApp</span>
             </a>
             <a
-              href="mailto:contacto@danielmass.dev"
+              href={"mailto:" + config.email}
               className="flex items-center gap-2 text-white/80 hover:text-white transition-all hover:text-shadow-md text-shadow-primary/40 duration-200"
               aria-label="Contactar por Email"
             >

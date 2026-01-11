@@ -10,4 +10,5 @@ export const navBarLinks = [
 export const config = {
   calendlyUrl: "https://calendly.com/danymassjr/30min",
   whatsappUrl: "https://wa.me/56973623194",
+  email: "danymassjr@gmail.com",
 };

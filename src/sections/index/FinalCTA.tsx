@@ -39,7 +39,7 @@ export default function FinalCTA() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-lg md:text-xl text-white/80 mb-8 max-w-2xl mx-auto"
             >
-              Agenda una llamada y revisamos tu caso sin compromiso.
+              Agenda una llamada y reviso tu caso sin compromiso.
             </motion.p>
 
             <motion.div
@@ -53,7 +53,7 @@ export default function FinalCTA() {
                 Icon={Calendar}
                 cta="Agendar llamada"
                 href={config.calendlyUrl}
-                className="text-lg px-8 py-4 shadow-xl shadow-primary/30 hover:shadow-2xl hover:shadow-primary/40 transition-all"
+                className="text-lg px-8 py-4 hover:shadow-primary/10"
               />
             </motion.div>
           </div>
