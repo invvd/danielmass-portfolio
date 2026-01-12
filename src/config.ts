@@ -8,7 +8,7 @@ export const navBarLinks = [
 ];
 
 export const config = {
-  calendlyUrl: "https://calendly.com/danymassjr/30min",
+  calendlyUrl: "https://calendly.com/danymassjr/reunion-de-diagnostico",
   whatsappUrl: "https://wa.me/56973623194",
   email: "danymassjr@gmail.com",
 };
