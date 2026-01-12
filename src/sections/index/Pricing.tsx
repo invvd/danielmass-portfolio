@@ -126,7 +126,7 @@ export default function Pricing() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.25 }}
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-semibold mb-4">
@@ -145,7 +145,7 @@ export default function Pricing() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.25 }}
             className="text-center mb-8"
           >
             <h3 className="text-2xl md:text-3xl font-semibold mb-2">
@@ -167,7 +167,7 @@ export default function Pricing() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.25 }}
             className="text-center mb-8"
           >
             <h3 className="text-2xl md:text-3xl font-semibold mb-2">
@@ -191,7 +191,7 @@ export default function Pricing() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.25 }}
           className="p-6 md:p-8 rounded-xl border border-white/10 bg-linear-to-br from-white/5 to-white/0 backdrop-blur-sm max-w-3xl mx-auto mb-16"
         >
           <h4 className="text-xl font-semibold mb-3">
@@ -228,7 +228,7 @@ export default function Pricing() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.25 }}
           className="p-8 md:p-12 rounded-2xl border border-primary/20 bg-linear-to-br from-primary/10 to-primary/5 backdrop-blur-sm text-center"
         >
           <h3 className="text-2xl md:text-3xl font-semibold mb-3">
@@ -269,7 +269,7 @@ function AutomationPackageCard({
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
+      transition={{ duration: 0.35, delay: index * 0.1 }}
       className={`p-6 rounded-xl backdrop-blur-lg backdrop-brightness-75 shadow-lg shadow-black/20 border flex flex-col h-full relative ${
         pkg.recommended
           ? "border-primary/50 bg-linear-to-br from-primary/10 to-primary/5"
@@ -354,7 +354,7 @@ function ComplementaryServiceCard({
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
+      transition={{ duration: 0.35, delay: index * 0.1 }}
       className="p-6 rounded-xl backdrop-blur-lg backdrop-brightness-75 shadow-lg shadow-black/20 border border-white/5 flex flex-col h-full"
     >
       <div className="mb-4">

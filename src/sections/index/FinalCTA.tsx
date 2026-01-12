@@ -14,7 +14,7 @@ export default function FinalCTA() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.3 }}
           className="relative overflow-hidden p-12 rounded-3xl border border-primary/30 bg-linear-to-br from-primary/20 via-primary/10 to-black/40 backdrop-blur-lg shadow-2xl shadow-primary/10"
         >
           {/* Decoración de fondo */}
@@ -26,7 +26,7 @@ export default function FinalCTA() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.1 }}
+              transition={{ duration: 0.25, delay: 0.1 }}
               className="text-3xl md:text-5xl font-bold mb-6"
             >
               ¿Quieres saber si esto sirve para tu negocio?
@@ -36,7 +36,7 @@ export default function FinalCTA() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
+              transition={{ duration: 0.25, delay: 0.2 }}
               className="text-lg md:text-xl text-white/80 mb-8 max-w-2xl mx-auto"
             >
               Agenda una llamada y reviso tu caso sin compromiso.
@@ -46,7 +46,7 @@ export default function FinalCTA() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.3 }}
+              transition={{ duration: 0.25, delay: 0.3 }}
               className="flex justify-center items-center"
             >
               <PrimaryButton

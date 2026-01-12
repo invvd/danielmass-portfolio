@@ -37,7 +37,7 @@ export default function Solution() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.3 }}
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-semibold mb-4">
@@ -60,7 +60,7 @@ export default function Solution() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.25, delay: index * 0.1 }}
                 className="text-center p-6 rounded-xl border border-white/5 bg-linear-to-br from-primary/5 to-primary/10 backdrop-blur-sm"
               >
                 <div className="inline-flex p-3 rounded-xl bg-primary/10 border border-primary/20 mb-4">
@@ -78,7 +78,7 @@ export default function Solution() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          transition={{ duration: 0.3, delay: 0.2 }}
           className="p-8 rounded-2xl border border-white/5 bg-linear-to-br from-white/5 to-white/0 backdrop-blur-sm"
         >
           <h3 className="text-2xl font-semibold mb-6 text-center">
@@ -91,7 +91,7 @@ export default function Solution() {
                 initial={{ opacity: 0, x: -10 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: 0.3 + index * 0.05 }}
+                transition={{ duration: 0.2, delay: 0.3 + index * 0.05 }}
                 className="flex items-center gap-3"
               >
                 <div className="shrink-0 p-1 rounded-full bg-green-500/20">
@@ -106,7 +106,7 @@ export default function Solution() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.5 }}
+            transition={{ duration: 0.3, delay: 0.5 }}
             className="text-center mt-8"
           >
             <p className="text-lg md:text-xl text-white/90">

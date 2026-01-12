@@ -36,7 +36,7 @@ export default function WhyMe() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.3 }}
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-semibold mb-4">
@@ -53,7 +53,7 @@ export default function WhyMe() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.25, delay: index * 0.1 }}
                 className="p-6 rounded-xl border border-white/5 bg-linear-to-br from-white/5 to-white/0 backdrop-blur-sm hover:border-primary/20 transition-colors"
               >
                 <div className="flex items-start gap-4">
@@ -76,7 +76,7 @@ export default function WhyMe() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
+          transition={{ duration: 0.3, delay: 0.4 }}
           className="mt-12 p-8 rounded-2xl border border-primary/20 bg-linear-to-br from-primary/10 to-primary/5 backdrop-blur-sm text-center"
         >
           <p className="text-lg md:text-xl text-white/90">
