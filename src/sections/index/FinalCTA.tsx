@@ -50,6 +50,8 @@ export default function FinalCTA() {
               className="flex justify-center items-center"
             >
               <PrimaryButton
+                target="_blank"
+                rel="noopener noreferrer"
                 Icon={Calendar}
                 cta="Agendar llamada"
                 href={config.calendlyUrl}

@@ -5,6 +5,7 @@ export default function PrimaryButton({
   className,
   disabled,
   target,
+  rel,
 }: {
   href: string;
   cta: string;
@@ -12,6 +13,7 @@ export default function PrimaryButton({
   className?: string;
   disabled?: boolean;
   target?: string;
+  rel?: string;
 }) {
   if (disabled) {
     return (
@@ -27,6 +29,7 @@ export default function PrimaryButton({
 
   return (
     <a
+      rel={rel}
       target={target}
       aria-disabled={disabled}
       href={href}
