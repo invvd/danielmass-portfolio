@@ -1,0 +1,27 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ClientLayout from "../layouts/ClientLayout";
+import FinalCTA from "../sections/index/FinalCTA";
+import Hero from "../sections/index/Hero";
+import Pricing from "../sections/index/Pricing";
+import Problems from "../sections/index/Problems";
+import Process from "../sections/index/Process";
+import Projects from "../sections/index/Projects";
+import Services from "../sections/index/Services";
+import Solution from "../sections/index/Solution";
+import WhyMe from "../sections/index/WhyMe";
+---
+
+<BaseLayout>
+  <ClientLayout client:load>
+    <Hero client:visible />
+    <Problems client:visible />
+    <Solution client:visible />
+    <Projects client:visible />
+    <Process client:visible />
+    <WhyMe client:visible />
+    <Services client:visible />
+    <Pricing client:visible />
+    <FinalCTA client:visible />
+  </ClientLayout>
+</BaseLayout>
