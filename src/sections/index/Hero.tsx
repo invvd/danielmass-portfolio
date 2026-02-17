@@ -22,7 +22,7 @@ export default function Hero() {
         </h1>
       </motion.div>
       <motion.p
-        className="text-balance max-w-3xl text-2xl md:text-4xl text-white/90 mt-6 font-medium"
+        className="text-balance max-w-3xl md:text-lg text-white/90 mt-6 font-medium"
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
